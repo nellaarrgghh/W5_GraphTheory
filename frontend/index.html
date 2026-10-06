@@ -1,1 +1,66 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graph Visualizer</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Vis.js for graph visualization-->
+        <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Graph Visualizer</h1>
+                <p>Input a matrix to visualize its graph, spanning tree, and fundamental matrices.</p>
+            </header>
+            
+            <main>
+                <div class="left-panel">
+                    <section class="input-section">
+                        <h2>Input graph data</h2>
+                        <div class="form-group">
+                            <label for="matrix-type">Matrix Type:</label>
+                            <select id="matrix-type">
+                                <option value="adjacency">Adjacency Matrix</option>
+                                <option value="incidence">Incidence Matrix</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="matrix-input">Matrix data:</label>
+                            <textarea id="matrix-input" rows="8" placeholder="Enter rows separated by newlines.&#10;Values can be separated by spaces or commas.&#10;&#10;Example:&#10;0 1 1&#10;1 0 1&#10;1 1 0"></textarea>
+                        </div>
+                        
+                        <button id="analyze-btn">Analyze graph</button>
+                        <div id="error-message" class="error"></div>
+                    </section>
+                    
+                    <section class="results-section">
+                        <h2>Fundamental Matrices</h2>
+                        <div class="matrix-container">
+                            <h3>Fundamental Cycle Matrix(Z<sub>f</sub>)</h3>
+                            <div id="cycle-matrix-out" class="table-scroll">Waiting for input...</div>
+                        </div>
+                        
+                        <div class="matrix-container">
+                            <h3>Fundamental Cut-set Matrix(C<sub>f</sub>)</h3>
+                            <div id="cutset-matrix-out" class="table-scroll">Waiting for input...</div>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="right-panel">
+                    <h2>Graph Visualization</h2>
+                    <div id="graph-network"></div>
+                    <div class="legend">
+                        <span class="legend-item"><span class="color-box tree-edge"></span> Spanning Tree Edge</span>
+                        <span class="legend-item"><span class="color-box non-tree-edge"></span> Non-Tree Edge</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
