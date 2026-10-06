@@ -11,7 +11,7 @@
 
 This repository contains the backend and frontend code for the Graph Visualizer assignment (Week 5 Graph Theory).
 
-## Prerequisite
+## Prerequisites
 To run the backend, you need Python and pip installed.
 The frontend requires a modern web browser, and optionally a local server (like Live Server or python -m http.server).
 
@@ -109,7 +109,12 @@ Output:
 ## Complete Bipartite Graph (Adjacency Matrix) Results
 Input:
 ```
-
+0 0 0 1 1 1
+0 0 0 1 1 1
+0 0 0 1 1 1
+1 1 1 0 0 0
+1 1 1 0 0 0
+1 1 1 0 0 0
 ```
 Output:
 - <img width="900" height="919" alt="image" src="https://github.com/user-attachments/assets/48e9831c-eff6-4fe9-bcfa-a49194237a84" />
