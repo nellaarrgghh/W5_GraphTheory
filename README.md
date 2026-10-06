@@ -77,12 +77,10 @@ The `cycle_matrix` represents the fundamental cycle matrix based on the spanning
 ## Web Results & Example Runs
 
 ### Screenshots / UI Results
-<!-- please add screenshots of the web interface results here -->
 - <img width="1297" height="905" alt="image" src="https://github.com/user-attachments/assets/d64b8d1a-0c1d-4fab-8065-0bb526a75b88" />
 
 ### Example Runs
-<!-- please add additional example inputs and their corresponding output / visual results here -->
--> House Graph (Incidence Matrix) Results
+### House Graph (Incidence Matrix) Results
 Input:
 ```
 1 1 1 0 0 0 0 0
@@ -94,7 +92,7 @@ Input:
 Output:
 - <img width="901" height="901" alt="image" src="https://github.com/user-attachments/assets/ab546318-3af6-4e5c-8a54-6e4881ef5428" />
 
--> Simple Tree Graph (Incidence Matrix) Results
+### Simple Tree Graph (Incidence Matrix) Results
 Input:
 ```
 1 0 0 0
@@ -106,7 +104,7 @@ Input:
 Output:
 - <img width="1078" height="903" alt="image" src="https://github.com/user-attachments/assets/17c8dda9-5a59-4495-a20b-f7798b2b1ac5" />
 
--> Complete Bipartite Graph (Adjacency Matrix) Results
+### Complete Bipartite Graph (Adjacency Matrix) Results
 Input:
 ```
 0 0 0 1 1 1
