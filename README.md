@@ -1,4 +1,4 @@
-# GraphTheoryW6_Group6
+# GraphTheoryW5_Group6
 ---
 ## Group Members
 
